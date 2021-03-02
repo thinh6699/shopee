@@ -1,0 +1,118 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --main-color: #ee4d2d;
+  --border-color: #dbdbdb;
+  --navbar-height: 31px;
+  --header-heigt: 120px;
+  --header-with-search-height: calc(var(--header-heigt) - var(--navbar-height))
+}
+
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  /* 16px */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  animation: fadeIn linear 0.2s;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  animation: growth linear 0.2s;
+}
+
+.modal__inner {
+}
+
+/* Button */
+.btn {
+  min-width: 124px;
+  height: 34px;
+  border: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 0;
+  background-color: var(--white-color);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn--size-s {
+  height: 32px;
+  font-size: 1.3rem;
+}
+
+.btn.btn--normal:hover {
+  background-color: #ddd;
+}
+
+.btn.btn--main {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
