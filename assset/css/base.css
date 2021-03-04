@@ -6,9 +6,9 @@
   --border-color: #dbdbdb;
   --navbar-height: 31px;
   --header-heigt: 120px;
+  --star-gold: #ffce3e;
   --header-with-search-height: calc(var(--header-heigt) - var(--navbar-height))
 }
-
 
 * {
   box-sizing: inherit;
@@ -39,10 +39,6 @@ html {
   margin-left: -5px;
   margin-right: -5px;
 }
-
-/* .grid_column{
-
-} */
 
 
 /* Test */
