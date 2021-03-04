@@ -36,8 +36,8 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /* .grid_column{
@@ -47,15 +47,21 @@ html {
 
 /* Test */
 .grid__column-2{
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
+}
+
+.grid__column-2-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
 }
 
 .grid__column-10{
   width: 83.333%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -112,7 +118,7 @@ html {
   min-width: 124px;
   height: 34px;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-decoration: none;
   border-radius: 2px;
   padding: 0;
@@ -136,4 +142,19 @@ html {
 .btn.btn--main {
   color: var(--white-color);
   background-color: var(--main-color);
+}
+
+
+/* Selection */
+.select-input{
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
 }
