@@ -154,3 +154,27 @@ html {
   position: relative;
   cursor: pointer;
 }
+
+
+/* Pageginatin */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.pagination-item{
+
+}
+
+.pagination-item-link{
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #A5A5A5;
+  font-weight: 400;
+}
+
+.pagination-item-icon{
+
+}

@@ -43,7 +43,7 @@
   list-style: none;
   padding: 0;
   position: absolute;
-  top: calc(100% + 3px);
+  top: calc(100% + 6px);
   right: 0;
   width: 160px;
   background-color: var(--white-color);
@@ -640,6 +640,8 @@
 .header__cart-list-item {
   list-style: none;
   padding-left: 0;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 .header__cart-item {
@@ -904,6 +906,7 @@
 }
 
 /* .category-item {
+
 } */
 
 .category-item--active .category-item__link {
@@ -1055,10 +1058,28 @@
 }
 
 /* Product item */
+.home-product{
+  margin-bottom: 20px;
+}
+
 .home-product-item {
   background-color: var(--white-color);
   margin-top: 10px;
   position: relative;
+  /* overflow: hidden; */
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: transform linear 0.2s;
+  will-change: transform; 
+  display: block;
+  text-decoration: none;
+}
+
+
+.home-product-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .home-product-item__img {
@@ -1066,6 +1087,10 @@
   background-size: contain;
   background-position: center;
 }
+
+/* .home-product-item__img:hover{
+  transform: scale(1.1);
+} */
 
 .home-product-item__name {
   font-size: 1.3rem;
@@ -1148,6 +1173,7 @@ i.home-product-item__like-icon-fill {
   font-size: 1.2rem;
   color: #595959;
   font-weight: 300;
+  padding-bottom: 8px;
 }
 
 /* .home-product-item__brand {
@@ -1192,10 +1218,35 @@ i.home-product-item__like-icon-fill {
 }
 
 .home-product-item__sale-off {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 36px;
+  width: 40px;
+  background-color: #FCD333;
+  text-align: center;
+}
+
+.home-product-item__sale-off::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  border-width: 0 20px 4px;
+  border-style: solid;
+  border-color: transparent #FCD333 transparent  #FCD333;
 }
 
 .home-product-item__sale-off-percent {
+  color: #EE4D2E;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 3px;
 }
 
 .home-product-item__sale-off-label {
+  font-size: 1.3rem;
+  color: var(--white-color);
 }
+
