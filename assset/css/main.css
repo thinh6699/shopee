@@ -1,8 +1,56 @@
 
 /* Header */
 .header {
-  height: 120px;
+  height: var(--header-heigt);
   background-image: linear-gradient(0, #fe6232, #f6432e);
+}
+
+/* Header sort-bar */
+.header__sort-bar{
+  position: fixed;
+  top: var(--header-heigt);
+  left:0;
+  right:0;
+  height: var(--header-sort-bar-height);
+  background-color: var(--white-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  display: none;
+}
+
+.header__sort-item{
+  flex: 1;
+}
+
+.header__sort-item:first-child .header__sort-link::after{
+  display: none;
+}
+.header__sort-item--active .header__sort-link{
+  color: var(--main-color);
+}
+
+.header__sort-link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  display: block;
+  height: 100%;
+  line-height: var(--header-sort-bar-height);
+  text-align: center;
+  position: relative;
+}
+
+.header__sort-link::after{
+  content: "";
+  position: absolute;
+  height: 60%;
+  border-left: 1px solid #e5e5e5;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .header__navbar-list {
@@ -131,6 +179,7 @@
 .header__navbar {
   display: flex;
   justify-content: space-between;
+  height: var(--navbar-height);
 }
 
 .header__navbar-item--strong {
@@ -469,6 +518,7 @@
   padding-left: 0;
   overflow: hidden;
   display: none;
+  z-index: 1;
 }
 
 .header__search-select::before {
@@ -1066,7 +1116,7 @@
   background-color: var(--white-color);
   margin-top: 10px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -1086,11 +1136,8 @@
   padding-top: 100%;
   background-size: contain;
   background-position: center;
+  transition: transform linear 0.2s;
 }
-
-/* .home-product-item__img:hover{
-  transform: scale(1.1);
-} */
 
 .home-product-item__name {
   font-size: 1.3rem;
@@ -1253,5 +1300,3 @@ i.home-product-item__like-icon-fill {
 .home-product--pagination{
   margin: 40px 0 60px 0;
 }
-
-
