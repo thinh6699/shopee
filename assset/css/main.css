@@ -1153,6 +1153,7 @@
   overflow-x: auto;
 }
 
+/* Xóa scrollbar */
 .mobile-category__list::-webkit-scrollbar {
   display: none;
 }
