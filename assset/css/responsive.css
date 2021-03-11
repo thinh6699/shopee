@@ -114,5 +114,8 @@
   .footer__content{
     padding: 0 16px;
   }
+  .footer__heading{
+    margin-bottom: 15px;
+  }
 
 }
