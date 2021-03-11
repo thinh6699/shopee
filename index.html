@@ -190,6 +190,9 @@
 
           <!-- Header with search -->
           <div class="header-with-search">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i class="header__mobile-search-icon fas fa-search"></i>
+            </label>
             <!-- Logo -->
             <div class="header__logo hide-on-tablet">
               <a href="/" class="header__logo-link">
@@ -204,8 +207,9 @@
               </a>
             </div>
 
+            <input type="checkbox" hidden id="mobile-search-checkbox">
             <!-- Search input -->
-            <div class="header__search">
+            <div class="header__search hide-on-mobile">
               <div class="header__search-input-container">
                 <input
                   type="text"
@@ -383,8 +387,8 @@
       <!-- Content -->
       <div class="app__container">
         <div class="grid wide">
-          <div class="grid__row app_content">
-            <div class="grid__column-2">
+          <div class="row sm-gutter app__content">
+            <div class="col l-2 m-0 c-0">
               <!-- Category -->
               <nav class="category">
                 <h3 class="category__heading">
@@ -404,7 +408,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="grid__column-10">
+            <div class="col l-10 m-12 c-12">
               <!-- Filter -->
               <div class="home-filter hide-on-mobile-tablet">
                 <span class="home-filter__sort-by">Sắp xếp theo</span>
@@ -439,10 +443,41 @@
                 </div>
               </div>
 
+              <nav class="mobile-category">
+                <ul class="mobile-category__list">
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị điện tử</a>
+                  </li>
+                  
+                  
+                </ul>
+              </nav>
+
               <!-- Product -->
               <div class="home-product">
-                <div class="grid__row">
-                  <div class="grid__column-2-4">
+                <div class="row sm-gutter">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -516,7 +551,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -590,7 +625,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -664,7 +699,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -738,7 +773,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -812,7 +847,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -886,7 +921,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -960,7 +995,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -1034,7 +1069,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -1108,7 +1143,7 @@
                     </a>
                   </div>
 
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <!-- Product item -->
                     <a class="home-product-item" href="">
                       <div
@@ -1229,7 +1264,7 @@
       <footer class="footer">
         <div class="grid wide">
           <div class="grid__row">
-            <div class="grid__column-2-4">
+            <div class="col l-2-4 m-4 c-6">
               <h3 class="footer__heading">chăm sóc khách hàng</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1248,7 +1283,7 @@
               </ul>
             </div>
 
-            <div class="grid__column-2-4">
+            <div class="col l-2-4 m-4 c-6">
               <h3 class="footer__heading">về shopee</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1265,7 +1300,7 @@
               </ul>
             </div>
 
-            <div class="grid__column-2-4">
+            <div class="col l-2-4 m-4 c-6">
               <h3 class="footer__heading">Thanh Toán</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1280,7 +1315,7 @@
               </ul>
             </div>
 
-            <div class="grid__column-2-4">
+            <div class="col l-2-4 m-4 c-6">
               <h3 class="footer__heading">theo dõi chúng tôi trên</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1305,7 +1340,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grid__column-2-4">
+            <div class="col l-2-4 m-4 c-6">
               <h3 class="footer__heading">vào cửa hàng trên di dộng</h3>
               <div class="footer__download">
                 <img
