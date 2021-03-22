@@ -1254,13 +1254,15 @@
 .home-product-item__price-current {
   margin-left: 10px;
   color: var(--main-color);
+  /* text-overflow: ellipsis;
+  overflow: hidden; */
 }
 
 .home-product-item__action {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 8px 10px;
+  margin: 8px 10px ;
 }
 
 .home-product-item__like {
